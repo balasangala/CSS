@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+
+        /* centering div element */
+        /* 1 method */
+         #parent {
+            
+            width: 500px;
+            height: 400px;
+            background-color: red;
+            position: relative;
+            /*it is optional it will make parent div as center of document*/
+            /* margin: 0 auto; */
+           
+         }
+
+        #child  {
+            width: 100px;
+            height: 100px;;
+            background-color: green;
+            position: absolute;
+            top: 0;
+            left: 0;
+            bottom: 0;
+            right: 0;
+            margin: auto;
+        }  
+
+        /* 2 method */
+         #parent {
+            
+            width: 500px;
+            height: 400px;
+            background-color: red;
+           position: relative;
+           
+        }
+
+        #child  {
+            width: 100px;
+            height: 100px;;
+            background-color: green;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        } 
+
+          /*3 method */
+
+           #parent {
+            
+            width: 500px;
+            height: 400px;
+            background-color: red;
+            display: flex;
+            
+           
+        }
+
+#child  {
+            width: 100px;
+            height: 100px;;
+            background-color: green;
+            margin: auto;
+           
+        }  
+
+        
+          /*4 method */
+
+           #parent {
+            
+            width: 500px;
+            height: 400px;
+            background-color: red;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            
+           
+        }
+
+#child  {
+            width: 100px;
+            height: 100px;;
+            background-color: green;
+            
+           
+        }  
+
+
+
+    
+    </style>
+</head>
+<body>
+    <div id="parent">
+        <div id="child">
+               
+        </div>
+
+     
+    </div>
+</body>
+</html>
